@@ -11,7 +11,7 @@
 
 
 
-class base {                                       // Base class
+class base1 {                                       // Base class
     int x;
 
     public int getx() {
@@ -23,7 +23,7 @@ class base {                                       // Base class
     }
 }
 
-class derived extends base {                       // Derived Class
+class derived1 extends base1 {                       // Derived Class
 
 }
 
@@ -45,12 +45,12 @@ class Dog extends Animal{
 public class Inheritance {
     public static void main(String[] args) {
         System.out.println("BASE CLASS");
-        base b = new base();
+        base1 b = new base1();
         b.setx(4);
         System.out.println(b.getx());
         
         System.out.println("DERIVED CLASS");
-        derived d = new derived();
+        derived1 d = new derived1();
         d.setx(99);
         System.out.println(d.getx());
 
