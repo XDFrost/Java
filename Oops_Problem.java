@@ -15,7 +15,7 @@ class GuessTheNum {
     public void isCorrectNum() {
         if(guess == randomNum) {
             System.out.println("You won");
-            System.out.println("Number of guesses: " + numbrOfGuesses);
+            System.out.println("Number of guesses: " + numbrOfGuesses + 1);
         }
         
         else {
@@ -37,6 +37,7 @@ class GuessTheNum {
         this.guess = inp.nextInt();
 
         isCorrectNum();
+        inp.close();
     }
 }
 
