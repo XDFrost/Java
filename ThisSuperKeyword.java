@@ -12,6 +12,10 @@ class Keyword {
         this.a = a;
     }
 
+    // Keyword() {
+    //     System.out.println("Default constructor");
+    // }
+
     public int returnone() {
         return 1;
     }
