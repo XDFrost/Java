@@ -9,6 +9,8 @@
 
 // No multiple inheritance i.e. there can be only one super class/base class
 
+// Child class can't access the private entities of parent class
+
 
 
 class base1 {                                       // Base class

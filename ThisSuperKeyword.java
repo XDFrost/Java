@@ -1,7 +1,7 @@
-// This is way to reference object of a class to be created
+// This is way to reference object of a class to be created; therefore, changes will also be seen in obj, not only in class
 // Used in order to pass the same object in a method
 
-// super keyword is used to refer imediate parent class object
+// super keyword is used to refer immediate parent class object
 
 
 
@@ -41,3 +41,6 @@ public class ThisSuperKeyword {
         System.out.println(d.getA());
     }
 }
+
+
+// If this is not used, then the value of num will be 0 because the compiler will think that the num in the constructor is the same as the num in the class i.e. num is not global

@@ -13,7 +13,7 @@
 // Abstract class is used to fix the methods that must be defined in the child class
 /* Ex:
 
-    pubic abstract class Phone {
+    public abstract class Phone {
         abstarct method
     }
     
@@ -97,7 +97,7 @@ abstract class child3 extends Basen {
 public class Abstract_classes {
     public static void main(String[] args) {
         // Basen b = new Basen();            // Gives error because basen is abstract class
-        //child3 c1 = new child3();            // Gives error because basen is abstract class
+        // child3 c1 = new child3();            // Gives error because basen is abstract class
         childn c = new childn();
         c.greet();
         Basen c1 = new childn();               // Object of sub-class with reference of super class

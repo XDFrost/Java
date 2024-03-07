@@ -1,0 +1,256 @@
+CODE - 22CS010
+
+
+Java Compilation: Source Code -> Byte Code -> Machine Code
+
+
+Main points: 
+
+1. History of Java
+    - Initiated developed by James Gosling, Mike Sheridan, and Patrick Naughton in june 1991             -             Initially called green team
+    - Initially designed for small, embedded systems in electronic appliances like set-top boxes
+    - First called Greentalk by James Gosling, file extension was .gt
+    - In 1995 called Oak by James Gosling, file extension was .oak because oak is a symbol of strength and chosen as a national tree of many countries like USA, France, Germany, Romania etc.
+    - After that in 1995, renamed as Java because it was already a trademark by Oak Technologies
+    - Came in a magzine Top 10 Hot Products of 1995
+    - Developed at Sun Microsystems (which is now a subsidiary of Oracle Corporation) and released in 1995 as a core component of Sun Microsystems' Java platform
+    - Java is based on an island of Indonesia called Java that produced large amounts of coffee
+    - First JDK (Java Development Kit) 1.0 released on January 23, 1996
+
+2. Features of Java
+    - Simple
+        - Garbage collection is automatic
+        - No pointers
+        - No operator overloading
+    
+    - Object Oriented
+        - Object
+        - Class
+        - Inheritance
+        - Polymorphism
+        - Abstraction
+        - Encapsulation
+
+    - Platform Independent
+        - Using JVM (Java Virtual Machine)
+        - JVM is a software that is a part of JRE (Java Runtime Environment)
+            - JRE = JVM + Library Classes
+            - Contains a class loader that loads the class files
+            - Contains a bytecode verifier that verifies the bytecode
+
+    - Secured
+        - No explicit pointer
+
+    - Robust
+        - Automatic garbage collection
+        - Exception handling
+        - Type checking mechanism
+
+    - Architecture Neutral
+        - Java is Architecture Neutral because it has no implementation dependent features like size of primitive types is fixed. It'll take 4 bytes for int, 8 bytes for long etc.
+
+    - Portable
+        - Java is portable because it facilitates you to carry the java bytecode to any platform. It doesn't require any implementation.
+
+    - High Performance
+        - Just in time compiler is used to improve the performance
+        - Uses JIT (Just in time) compiler for high performance, it'll execute the code on demand
+
+    - Distributed
+        - Java is distributed because it facilitates users to create distributed applications in java. RMI and EJB are used for creating distributed applications. This feature of java makes us able to access files by calling the methods from any machine on the internet.
+        - RMI stands for Remote Method Invocation
+        - EJB stands for Enterprise Java Beans
+        - These are the API that provides facility to create distributed application in java
+
+    - Multithreaded
+        - We can write JAVA programs that deals with many tasks at once by defining multiple threads. This is called Multithreading
+        - The threads share common memory area
+
+    - Dynamic
+        - Supports the dynamic loading of classes
+
+    - Interpreted
+
+
+
+############################################################################################################################################################ 
+
+
+
+- Class: It is a blueprint of an object creation.
+- Object: Instanace of a Class
+
+
+OOPS concepts supported by Java:
+
+
+- Inheritance: Acquiring the properties of one class into another class.
+
+        Ex: Parent class  --Inherits->  Child class
+
+- Polymorphism: Ability to take more than one form.
+
+        Ex: Method Overloading, Method Overriding
+
+- Encapsulation: Combining data and its associated methods into a single unit.
+
+        Ex: Class
+
+- Abstraction: Hiding the internal implementation details and showing only the functionality to the user.
+
+        Ex: Abstract class, Interface
+        
+
+
+- JVM: Java Virtual Machine. It is a software that is used to run the Java programs by converting the bytecode into machine language.
+- JRE: Java Runtime Environment. JRE = JVM + Library Classes + Other files to run a Java program. Can only run byte codes/execute the programs or can't compile the programs
+- JDK: Java Development Kit. JDK = JRE + Development Tools (jre, compiler, debugger, javadocs, etc..)
+
+
+
+############################################################################################################################################################
+
+
+
+IDENTIFIERS
+
+- Symbolic names used for identification purpose
+- Can be a class name, variable name, constant name, package name, method name, etc.
+
+
+Ex: 
+class One {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        int c = a + b;
+        System.out.println(c);
+    }
+}
+
+- Here One, main, a,b,c are identifier
+- Rules:
+        - Can contain alphabets, digits, underscore, dollar sign
+        - Can't start with a digit
+        - Can't be a reserved word
+        - Can't contain spaces
+        - Can't contain special characters except underscore and dollar sign
+        - Can't be a keyword
+        - Can't be a boolean literal (true, false, null)
+        - Can't be a null literal (null)
+        - Can't be a unicode character
+        - Can't be a unicode escape sequence
+        - Can't be a pre-defined class name (String, System, etc..)
+        - Can't be a pre-defined interface name (Runnable, Serializable, etc..)
+        - Can't be a pre-defined exception name (ArithmeticException, NullPointerException, etc..)
+        - Can't be a pre-defined enum name (Enum, EnumSet, etc..)
+        - Can't be a pre-defined annotation name (Override, Deprecated, etc..)
+        - Can't be a pre-defined package name (java, lang, util, etc..)
+        - Can't be a pre-defined method name (main, toString, etc..)
+        - Can't be a pre-defined variable name (args, out, etc..)
+        - Can't be a pre-defined constant name (PI, MAX_VALUE, etc..)
+        - Can't be a pre-defined enum constant name (RED, BLUE, etc..)
+        - Can't be a pre-defined annotation type name (Override, Deprecated, etc..)
+        - Can't be a pre-defined label name (main, toString, etc..)
+        - Can't be a pre-defined module name (java.base, java.compiler, etc..)
+        - Can't be a pre-defined type parameter name (T, E, etc..)
+        - Can't be a pre-defined type name (String, System, etc..)
+
+
+
+############################################################################################################################################################
+
+
+
+KEYWORDS
+
+- These are predefined words that are reserved for any specific purpose
+- Can't be used as an identifier
+
+
+
+############################################################################################################################################################
+
+
+
+DATATYPES
+
+- Primitive Datatypes : Predefined datatypes
+    - byte : 1 byte
+    - short : 2 bytes
+    - int : 4 bytes
+    - long : 8 bytes
+    - float : 4 bytes
+    - double : 8 bytes
+    - char : 2 bytes
+    - boolean : 1 bit
+
+- Non-Primitive Datatypes : User defined datatypes
+    - String
+    - Array
+    - Class
+    - Interface
+    - Enum
+    - Annotation
+
+
+
+############################################################################################################################################################
+
+
+
+operators:  
+    - Unary Operators
+        - Applies to a single operand
+        - +, -, ++, --, !
+    
+    - Binary Operators
+        - Applies to two operands
+        - +, -, *, /, %, <, >, <=, >=, ==, !=, &&, ||, &, |, ^, <<, >>, >>>
+
+    - Arithmetic Operators
+        - +, -, *, /, %, ++, --
+    
+    - Shift Operators
+        - <<, >>, >>>
+
+    - Relational Operators
+        - <, >, <=, >=, ==, !=
+    
+    - Bitwise Operators
+        - Checks both operators even if first is false
+        - &, |, ^, ~, <<, >>, >>>
+    
+    - Logical Operators
+        - Checks second operator only if first is true
+        - &&, ||, !
+    
+    - Assignment Operators
+        - =, +=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>=, >>>=
+    
+    - conditional Operators 
+        - ?:
+
+    - Ternary Operator
+        - ?:
+    
+
+
+############################################################################################################################################################
+
+
+
+- System.out.println() : Used to print the output on the console
+- Where System is a class, out is an object/variable of PrintStream class, println() is a method of PrintStream class
+
+
+
+############################################################################################################################################################
+
+
+
+Command Line Arguments
+- These are the arguments that are passed at the time of running the program
+- These are passed after the class name
+- These are passed as a string
+- These are stored in the String array args[] of main() method

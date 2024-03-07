@@ -4,18 +4,18 @@ import java.util.Random;
 
 class GuessTheNum {
     private int guess;
-    private int numbrOfGuesses = 0;
+    private int numbrOfGuesses = 1;
     private int randomNum;
 
     public GuessTheNum() {                  // Constructor generating random num
         Random rand = new Random(); 
-        this.randomNum = rand.nextInt(101);
+        this.randomNum = rand.nextInt(100) + 1;             // 1 will be added to the range of 0-99 and will increment the range to 1-100
     }
 
     public void isCorrectNum() {
         if(guess == randomNum) {
             System.out.println("You won");
-            System.out.println("Number of guesses: " + numbrOfGuesses + 1);
+            System.out.println("Number of guesses: " + numbrOfGuesses);
         }
         
         else {

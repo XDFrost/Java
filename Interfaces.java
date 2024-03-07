@@ -39,6 +39,9 @@
 // Interfaces are always public
 
 
+// We can declare a ckass abstract so that we don't have to use all fucntions of an interface
+
+
 
 class A {
 
@@ -89,7 +92,7 @@ interface Horn {
 }
 
 class Avon implements Bicycle, Horn {
-    // public int x = 3;
+    public int x = 3;
     public void applybrake(int decrement) {
         System.out.println("Applying brake");
     }
@@ -109,8 +112,9 @@ public class Interfaces {
         Avon A = new Avon();
         // Bicycle b = new Bicycle();             // Gives error - Mentioned Above
         A.applybrake(1);
+        A.x = 1;
         System.out.println(A.a);
-        System.out.println(A.x);
+        System.out.println("Value of x: " + A.x);
         // A.a = 0;                               // Gives error - Mentioned above
         A.blowhorn();
     }

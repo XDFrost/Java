@@ -1,7 +1,7 @@
 // Types:   
-        // 1. Public
-        // 2. Private
-        // 3. Protected
+        // 1. Public : Can be accessed by any other class
+        // 2. Private: Can be accessed by any other method in the same class
+        // 3. Protected : 
 
 // Specifies where a method/property is accessible
 // public by default
