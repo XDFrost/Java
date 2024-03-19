@@ -1,0 +1,75 @@
+Collection Interface Methods:
+
+
+1. boolean add(E obj)       -       Adds a object in a collection
+
+2. boolean addAll(Collection <? extends E> c)      -       Adds all elements of c to the collection
+
+3. void clear()
+
+4. boolean contains(Object obj)         -           Returns True if object is in collection
+
+5. boolean containsAll(Collection<?> c)         -       Checks all elements of collection
+
+6. boolean equals(Object obj)        -       Compares two collections
+
+7. int hashcode()       -       Returns hashcode of a collection
+
+8. boolean isEmpty()
+
+9. Iterator<E> iterator()       -       Returns iterator for a particular collection
+
+10. boolean remove(Object obj)          -           Removes a single object
+
+11. boolean removeAll(Collection<?> c)
+
+12. default boolean removeIf(Predicate<? extends E> predicate)       -       Removes all elements that satisfy the predicate condition
+
+13. boolean retainAll(Collection<?> c)       -       Retains all elements that are in c 
+
+14. int size()       -       Returns the size of collection
+
+15. Object[] toArray()       -       Returns an array of objects of invoking collection
+
+16. <T> t[] toArray(T array[])       -       Returns an array of objects of invoking collection
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+List Interface
+
+
+iterface list<E>
+
+1. void add(int index, E obj)       -       Adds obj at the specified index
+
+2. boolean addAll(Collection<?> c)
+
+3. E get(int index)       -       Returns the object at the specified index
+
+4. int indexOf(Object obj)       -       Returns the index of the first occurrence of obj
+
+5. int lastIndexOf(Object obj)       -       Returns the index of the last occurrence of obj
+
+6. E remove(int index)       -       Removes the object at the specified index
+
+7. default void replaceAll(UnaryOperator<E> operator)       -       Replaces all elements with the result of applying the operator
+
+    Ex: list.replaceAll(x -> x * 2);
+
+8. E set(int index, E obj)       -       Sets the object at the specified index
+
+9. List<E> subList(int start, int end)       -       Returns a list of elements from start to end
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Linked List - Implements both List and deque Interface
+
+Syntax: class LinkedList<E>
+
+LinkedList()        -       Creates an empty linked list    
+
+LinkedList(Collection <? extends E> c)         -        Creates a linked list with the elements of c
