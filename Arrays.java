@@ -31,4 +31,9 @@ public class Arrays {
             System.out.print(marks[i] + " ");
         }
     }
+
+    public static void sort(int[] arr) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'sort'");
+    }
 }
