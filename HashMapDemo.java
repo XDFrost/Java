@@ -17,14 +17,18 @@ public class HashMapDemo {
         System.out.println();
 
         // Get a set of the entries
-        Set <Map.Entry<String, Double>> set = hm.entrySet();
-        System.out.println(set);      
-        for(Map.Entry<String, Double> me : set) {
-            System.out.print(me.getKey() + ": ");
-            System.out.println(me.getValue());
-        }
+        // Set <Map.Entry<String, Double>> set = hm.entrySet();
+        // System.out.println(set);      
+        // for(Map.Entry<String, Double> me : set) {
+        //     System.out.print(me.getKey() + ": ");
+        //     System.out.println(me.getValue());
+        // } 
 
         System.out.println();
+
+        for(String s : hm.keySet()) {
+            System.out.print(s + " : " + hm.get(s));
+        }
 
         // Depositig 1000 into John Doe's account
         double balance = hm.get("John Doe");

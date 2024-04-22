@@ -1,0 +1,100 @@
+JDBC - Java Database Connectivity
+
+- API to connect and execute the queries with the database
+- API -> Application Programming Interface
+
+- java api makes use of java drivers for connecting with the database
+- Types of drivers:
+    1. Type 1 driver -> JDBC-ODBC bridge driver         (ODBC - Open Database Connectivity)         (Combination of Java and C language)
+    2. Type 2 driver -> Native API driver           (Partially written in Java and partially in C language)
+    3. Type 3 driver -> Network protocol driver         (Written in Java language)
+    4. Type 4 driver -> Thin driver         (Fully written in Java language)
+
+- Earlier ODBC was used to connect with the database which was written in C language
+
+- We can perform the following operations using JDBC:
+    1. Establish the connection with the database
+    2. Execute the queries
+    3. Fetch the data from the database
+    4. Insert the data into the database
+    5. Update the data in the database
+    6. Delete the data from the database
+
+- Java.sql package is used to connect with the database
+- List of Interface:
+    1. Driver Interface
+    2. Connection Interface
+    3. Statement Interface
+    4. PreparedStatement Interface
+    5. ResultSet Interface
+    6. CallableStatement Interface
+    7. Rowset Interface    
+
+- List of classes:
+    1. DriverManager class
+    2. Blob class
+    3. Clob class
+    4. Types class
+
+
+- Steps to connect with the database:
+    1. Register the driver class
+
+        - forName is a static method of Class class
+        - Syntax:
+
+                public static void forName("com.mysql.cj.jdbc.Driver") throws ClassNotFoundException
+                where com.mysql.cj.jdbc.Driver is the driver class of MySQL database
+
+        - Ex:
+
+                Class.forName("com.mysql.cj.jdbc.Driver");
+
+    2. Establish the connection
+
+        - getConnection is a static method of DriverManager class
+        - Syntax:
+
+                public static Connection getConnection(String url, String username, String password) throws SQLException
+                where url is the connection string of the database, username is the username of the database, and password is the password of the database
+
+        - Ex:
+
+                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/college", "root", "");
+
+    3. Create the statement         # object to execute the query
+
+        - createStatement is a method of Connection interface
+        - Syntax:
+
+                public Statement createStatement() throws SQLException
+
+        - Ex:
+
+                Statement stmt = con.createStatement();         # con is the object of Connection interface
+
+    4. Execute the query
+
+        - executeQuery is a method of Statement interface
+        - Syntax:
+
+                public ResultSet executeQuery(String query) throws SQLException
+                where query is the query to be executed
+
+        - Ex:
+
+                ResultSet rs = stmt.executeQuery("select * from students");
+                while(rs.next()) {
+                    System.out.println(rs.getInt(1) + " " + rs.getString(2) + " " + rs.getString(3));           # 1, 2, 3 are the column numbers where 1 contains integer value, 2 contains string value, and 3 contains string value
+                }
+
+    5. Close the connection
+    
+            - close is a method of Connection interface
+            - Syntax:
+    
+                    public void close() throws SQLException
+    
+            - Ex:
+    
+                    con.close();

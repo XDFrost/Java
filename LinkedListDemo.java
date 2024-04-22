@@ -8,9 +8,9 @@ public class LinkedListDemo {
         
         a1.add("A");
         a1.add("B");
-        a1.add("C");
         a1.add("D");
         a1.add("E");
+        a1.add("C");
         
         a1.add(1, "A2");
         

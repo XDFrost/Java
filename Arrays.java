@@ -12,7 +12,7 @@ public class Arrays {
         marks_arr[1] = 200;                        
         marks_arr[2] = 300;                        
         marks_arr[3] = 400;                        
-        marks_arr[4] = 500;  
+        marks_arr[4] = 500;
         
         System.out.println(marks_arr[2]);
         System.out.println("Printing array: ");
